@@ -7,5 +7,9 @@ month = "april" #For debugging purposes
 
 movielist = RetrieveMovieList.scraper(month)
 
-XMLGen.MakeXMLFile(movielist)
+output = XMLGen.MakeXMLString(movielist)
+
+print "Content-Type: text/xml"
+print ""
+print output
 
