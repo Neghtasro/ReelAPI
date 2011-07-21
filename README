@@ -1,0 +1,12 @@
+ReelAPI is an attempt to create a quick and painless way to find movie
+listings for Temple University's in house movie theather, The Reel.
+
+Since I'm a novice programmer and this is my first Python application,
+I have not yet written documentation, because I still haven't figured
+out how to do everything yet. So far, the program scrapes, parses,
+and formats until I have names and dates, but that's about it. Soon,
+I should be able to wrap the listings in XML. Once I have something
+that can be interfaced with, I will write any necessary documentation.
+
+This project is still in heavy development, and won't be ready for use
+for a while.
