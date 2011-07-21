@@ -35,25 +35,25 @@ def scraper(month):
     movie1 = movie1[4:-4].split('<br />')
     movie1[0] = movie1[0].strip()
     movie1[1] = movie1[1].strip()
-    print movie1
+#    print movie1
     
     movie2 = str(soup.find('div', id="movie3").findAll('p')[0])
     movie2 = movie2[4:-4].split('<br />')
     movie2[0] = movie2[0].strip()
     movie2[1] = movie2[1].strip()
-    print movie2
+#    print movie2
     
     movie3 = str(soup.find('div', id="movie2").findAll('p')[0])
     movie3 = movie3[4:-4].split('<br />')
     movie3[0] = movie3[0].strip()
     movie3[1] = movie3[1].strip()
-    print movie3
+#    print movie3
     
     movie4 = str(soup.find('div', id="movie4").findAll('p')[0])
     movie4 = movie4[4:-4].split('<br />')
     movie4[0] = movie4[0].strip()
     movie4[1] = movie4[1].strip()
-    print movie4
+#    print movie4
     
     a = (movie1, movie2, movie3, movie4) #THIS IS WHERE I REACHED ENLIGHTENMENT
     
