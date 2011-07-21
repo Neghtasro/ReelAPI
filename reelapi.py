@@ -5,11 +5,10 @@ import XMLGen
 
 month = "april" #For debugging purposes
 
-movielist = RetrieveMovieList.scraper(month)
+if not(month == "break"):
+	movielist = RetrieveMovieList.scraper(month)
+	output = XMLGen.MakeXMLString(movielist, month)
 
-output = XMLGen.MakeXMLString(movielist)
-
-print "Content-Type: text/xml"
-print ""
-print output
-
+	print "Content-Type: text/xml"
+	print ""
+	print output
