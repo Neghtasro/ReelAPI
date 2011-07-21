@@ -27,7 +27,7 @@ def findDate():
     return thisMonth
 
 def scraper(month):
-    """Gets the movie list, formats it, and returns it as a tuple. More work needs to be done for special cases."""
+    """Gets the movie list, formats it, and returns it as a tuple. More work needs to be done for special cases. Currently depends on BeautifulSoup."""
 
     page = urllib2.urlopen("http://temple.edu/mcpb/thereel/" + month + ".html")
     soup = BeautifulSoup(page)
@@ -58,10 +58,4 @@ def scraper(month):
     a = (movie1, movie2, movie3, movie4) #THIS IS WHERE I REACHED ENLIGHTENMENT
     
     return a
-
-month = findDate()
-
-month = "april" #For debugging purposes
-
-
 
