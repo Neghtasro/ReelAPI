@@ -1,12 +1,19 @@
 ReelAPI is an attempt to create a quick and painless way to find movie
 listings for Temple University's in house movie theather, The Reel.
 
-Since I'm a novice programmer and this is my first Python application,
-I have not yet written documentation, because I still haven't figured
-out how to do everything yet. So far, the program scrapes, parses,
-and formats until I have names and dates, but that's about it. Soon,
-I should be able to wrap the listings in XML. Once I have something
-that can be interfaced with, I will write any necessary documentation.
+ReelAPI currently has two methods of functionality. The default is to
+return an XML formatted file to stdout, which seems to be how most web
+frameworks like their data. Alternatively, it can be configured to write
+an XML file to the system, which can be useful for unit testing(probably).
 
-This project is still in heavy development, and won't be ready for use
-for a while.
+ReelAPI was developed by John Shaw in July of 2011. If you for some reason
+think any part of this code was well-written, you are insane, but you are free
+to use it, as long as you give proper credit.
+
+ReelAPI uses BeautifulSoup as its HTML parser. This means you will need to have
+BeautifulSoup installed or packaged with it if you plan to use it. BeautifulSoup
+can be found here: http://www.crummy.com/software/BeautifulSoup/
+
+The content that ReelAPI scrapes from is owned by Temple University. The content
+itself is owned by whoever owns it, not me, unless I made a movie being shown the
+The Reel, which I don't plan on doing, so it's safe to say I don't own it.
