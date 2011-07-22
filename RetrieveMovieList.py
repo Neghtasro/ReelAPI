@@ -26,6 +26,15 @@ def findDate():
         
     return thisMonth
 
+def monthCheck(month):
+    """Checks a given month to determine if it is valid."""
+    L = ["january", "february", "march", "april", "october", "november", "december"]
+    
+    if(month in L):
+        return True
+    else:
+        return False
+
 def scraper(month):
     """Gets the movie list, formats it, and returns it as a tuple. More work needs to be done for special cases. Currently depends on BeautifulSoup."""
 
