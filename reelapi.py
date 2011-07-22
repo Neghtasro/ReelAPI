@@ -4,7 +4,7 @@ import sys
 
 xml = True
 month = ""
-for item in sys.argv:
+for item in sys.argv[1:]
 	if item == "json":
 		xml = False
 	elif (RetrieveMovieList.monthCheck(item) == True):
