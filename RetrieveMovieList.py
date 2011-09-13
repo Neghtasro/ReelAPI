@@ -5,7 +5,7 @@ import datetime
 def findDate():
     """Finds the current month for use in building the URL. Uses system time."""
     
-    thisMonth = datetime.datetime.now().strftime("%m")
+    thisMonth = int(datetime.datetime.now().strftime("%m"))
 
     if thisMonth == 1:
         thisMonth = "january"
@@ -15,6 +15,8 @@ def findDate():
         thisMonth = "march"
     elif thisMonth == 4:
         thisMonth = "april"
+    elif thisMonth == 9:
+        thisMonth = "september"
     elif thisMonth == 10:
         thisMonth = "october"
     elif thisMonth == 11:
@@ -28,7 +30,7 @@ def findDate():
 
 def monthCheck(month):
     """Checks a given month to determine if it is valid."""
-    L = ["january", "february", "march", "april", "october", "november", "december"]
+    L = ["january", "february", "march", "april", "september", "october", "november", "december"]
     
     if(month in L):
         return True

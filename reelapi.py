@@ -4,7 +4,7 @@ import sys
 
 xml = True
 month = ""
-for item in sys.argv[1:]
+for item in sys.argv[1:]:
 	if item == "json":
 		xml = False
 	elif (RetrieveMovieList.monthCheck(item) == True):
@@ -12,6 +12,7 @@ for item in sys.argv[1:]
 
 if month == "":
 	month = RetrieveMovieList.findDate()
+	
 
 #month = "april" #For debugging purposes
 if xml == True:
